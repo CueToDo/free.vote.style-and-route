@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 /*title, subtile, menu, header, footer background-color*/
-div.title{background-color:#279FBB; color:white;}
-div.subtitle{background-color: #222;color:white; padding-top: 5px; padding-bottom:5px; }
-div.menu{background-color:  #111;color:white;padding-top: 5px;padding-bottom:5px;}
-div.footer{background-color:  #111;color:white;padding-top: 5px;padding-bottom:15px;}
-
+.title{background-color:#279FBB; color:white;}
+.subtitle{background-color: #222;color:white; padding-top: 5px; padding-bottom:5px; }
+.menu{background-color:  #111;color:white;padding-top: 5px;padding-bottom:5px;}
+.footer{background-color:  #111;color:white;padding-top: 5px;padding-bottom:15px;}
+.site-content{max-width:600px; margin-top:10px;}
+.footer .col-xs-12{margin-top:10px;}
 
 /*Centered menu*/
 .nav-pills {
