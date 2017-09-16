@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FBTestComponent } from './fbtest/fbtest.component';
 
 @Component({
   selector: 'app-root',

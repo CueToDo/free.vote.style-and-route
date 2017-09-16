@@ -6,8 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 
-import { FacebookModule } from 'ngx-facebook';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,8 +14,7 @@ import { FacebookModule } from 'ngx-facebook';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    FacebookModule.forRoot()
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
