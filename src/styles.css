@@ -2,37 +2,43 @@
 
 /*title, subtile, menu, header, footer background-color*/
 .title{background-color:#279FBB; color:white;}
-.subtitle{background-color: #222;color:white; padding-top: 5px; padding-bottom:5px; }
-.menu{background-color:  #111;color:white;padding-top: 5px;padding-bottom:5px;}
-.footer{background-color:  #111;color:white;padding-top: 5px;padding-bottom:15px;}
+.subtitle{background-color:#070707; color:white; padding-top: 5px; padding-bottom:5px; }
+.menu{background-color:#101010; color:white;padding-top: 5px;padding-bottom:5px;}
 .site-content{max-width:600px; margin-top:10px;}
+.footer{background-color:#070707;color:white;padding-top: 5px;padding-bottom:15px;}
 .footer .col-xs-12{margin-top:10px;}
 
 /*Centered menu*/
-.nav-pills {
+.nav {
     display: inline-block;
     float: none;
 }
 
-.nav>li>a.less-padding {
+/* main menu items */
+.nav > li > a.less-padding {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 /*Menu hyperlink text color*/
-div.menu .nav-pills a{color:white;}
+.menu .nav a{color:white;}
 
-/*Active menu item and hover background-color*/
-div.menu .nav-pills li.active > a,
-div.menu .nav-pills li > a:hover {background-color: #279FBB; color:white}
+/*Active menu item and hover color*/
+.menu .nav > li a.active,
+.menu .nav > li a:hover,
+.menu .nav > li.open > a,
+.menu .nav li li a.active,
+.menu .nav li li a:hover
+{background-color: #279FBB; color:white}
 
 /*Default cursor on active menu item*/
-div.menu .nav-pills li.active > a:hover{cursor:default;}
+.menu .nav a.active{cursor:default;}
+
 /*Allow pointer if active menu item has sub-menu*/
-div.menu .nav-pills li.active > a.dropdown-toggle:hover{cursor:pointer}
+.menu .nav a.dropdown-toggle:hover{cursor:pointer}
 
 /*Sub-Menu background and border*/
-div.menu .nav-pills li.active ul {background-color: #333; border:solid  1px #666;}
+.menu .nav ul {background-color: #333; border:solid  1px #666;}
 
 
 

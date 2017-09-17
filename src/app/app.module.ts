@@ -9,11 +9,19 @@ import { MenuComponent } from './menu/menu.component';
 import { TrendingComponent } from './quick-posts/trending/trending.component';
 import { HomeComponent } from './home/home.component';
 import { SelectedComponent } from './quick-posts/selected/selected.component';
+import { MyPostsComponent } from './quick-posts/my-posts/my-posts.component';
+import { FavouritePostsComponent } from './quick-posts/favourite-posts/favourite-posts.component';
+import { SignInComponent } from './authentication/sign-in/sign-in.component';
+import { MenuTextComponent } from './menu/menu-text/menu-text.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'menu-component', component: MenuTextComponent },
+  { path: 'sign-in', component: SignInComponent },
   { path: 'trending', component: TrendingComponent },
-  { path: 'selected', component: SelectedComponent }
+  { path: 'selected', component: SelectedComponent },
+  { path: 'my-posts', component: MyPostsComponent },
+  { path: 'favourite-posts', component: FavouritePostsComponent }
 ];
 
 @NgModule({
@@ -22,7 +30,11 @@ const appRoutes: Routes = [
     MenuComponent,
     TrendingComponent,
     HomeComponent,
-    SelectedComponent
+    SelectedComponent,
+    MyPostsComponent,
+    FavouritePostsComponent,
+    SignInComponent,
+    MenuTextComponent
   ],
   imports: [
     BrowserModule,
@@ -33,4 +45,6 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

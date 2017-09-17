@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,23 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  ngOnInit() {
 
-  activeLink = "Home";
-
-  isHome = true;
-
-  active(link) {
-    this.activeLink = link;
   }
+
+  constructor(private router: Router) {
+
+  }
+
+  QuickPostURLs: string[] = ['/trending', '/selected', '/my-posts', '/favourite-posts'];
+  MenuURLs: string[] = ['/menu-component'];
 
   isActive(link): boolean {
-    return link == this.activeLink;
+    switch (link) {
+      case "QuickPosts": {
+        console.log("QuickPosts" + this.router.url);
+        return this.QuickPostURLs.indexOf(this.router.url) > -1;
+      }
+      case "Menu": {
+        return this.MenuURLs.indexOf(this.router.url) > -1;
+      }
+      default: {
+        return link == this.router.url;
+      }
+    }
   }
-
-  ngOnInit() {
-  }
-
-
 
 }

@@ -1,23 +1,24 @@
 <div class="dropdown menu">
 
   <ul class="nav nav-pills">
-    <li [ngClass]="{ active: isActive('Home') }" (click)="active('Home')"><a routerLink="/" class="less-padding">Home</a>
+    <li><a routerLink="/" [ngClass]="{ active: isActive('/') }" class="less-padding">Home</a>
     </li>
-    <li [ngClass]="{ active: isActive('Quick Posts') }">
-      <a href="#" (click)="active('Quick Posts')" data-toggle="dropdown" class="dropdown-toggle less-padding">Quick Posts</a>
+    <li>
+      <a href="#" [ngClass]="{ active: isActive('Menu') }" data-toggle="dropdown" class="dropdown-toggle less-padding">Menu</a>
       <ul class="dropdown-menu">
-        <li><a routerLink="/trending">trending</a></li>
-        <li><a routerLink="/selected">selected</a></li>
-        <li><a routerLink="/myselkected">my selected</a></li>
-        <li><a routerLink="/my-posts">my posts</a></li>
-        <li><a routerLink="/favourite-posts">favourite posts</a></li>
-        <li><a routerLink="/post-of-the-week">post of the week</a></li>
-        <li><a routerLink="/post-of-the-week-vote">post-o-t-w vote</a></li>
+        <li><a routerLink="/menu-component" [ngClass]="{active: isActive('/menu-component')}">menu component</a></li>
       </ul>
     </li>
-    <li [ngClass]="{ active: isActive('Join') }"><a href="#" (click)="active('Join')" class="less-padding">Join</a></li>
-    <li [ngClass]="{ active: isActive('Sign In') }"><a href="#" (click)="active('Sign In')" class="less-padding">Sign In</a></li>
+    <li>
+      <a href="#" [ngClass]="{ active: isActive('QuickPosts') }" data-toggle="dropdown" class="dropdown-toggle less-padding">Quick Posts</a>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/trending" [ngClass]="{active: isActive('/trending')}">trending</a></li>
+        <li><a routerLink="/selected" [ngClass]="{active: isActive('/selected')}">selected</a></li>
+        <li><a routerLink="/my-posts" [ngClass]="{active: isActive('/my-posts')}">my posts</a></li>
+        <li><a routerLink="/favourite-posts" [ngClass]="{active: isActive('/favourite-posts')}">favourite posts</a></li>
+      </ul>
+    </li>
+    <li><a routerLink="/sign-in" [ngClass]="{ active: isActive('/sign-in') }" class="less-padding">Sign In</a></li>
   </ul>
-
 
 </div>
