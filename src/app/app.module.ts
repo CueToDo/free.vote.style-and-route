@@ -13,6 +13,7 @@ import { MyPostsComponent } from './quick-posts/my-posts/my-posts.component';
 import { FavouritePostsComponent } from './quick-posts/favourite-posts/favourite-posts.component';
 import { SignInComponent } from './authentication/sign-in/sign-in.component';
 import { MenuTextComponent } from './menu/menu-text/menu-text.component';
+import { RoutingComponent } from './routing/routing.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,7 +22,8 @@ const appRoutes: Routes = [
   { path: 'trending', component: TrendingComponent },
   { path: 'selected', component: SelectedComponent },
   { path: 'my-posts', component: MyPostsComponent },
-  { path: 'favourite-posts', component: FavouritePostsComponent }
+  { path: 'favourite-posts', component: FavouritePostsComponent },
+  { path: 'routing', component: RoutingComponent }
 ];
 
 @NgModule({
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     MyPostsComponent,
     FavouritePostsComponent,
     SignInComponent,
-    MenuTextComponent
+    MenuTextComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -18,6 +18,7 @@ export class MenuComponent implements OnInit {
 
   QuickPostURLs: string[] = ['/trending', '/selected', '/my-posts', '/favourite-posts'];
   MenuURLs: string[] = ['/menu-component'];
+  RoutingURLs:string[] = ['/routing'];
 
   isActive(link): boolean {
     switch (link) {
@@ -27,6 +28,9 @@ export class MenuComponent implements OnInit {
       }
       case "Menu": {
         return this.MenuURLs.indexOf(this.router.url) > -1;
+      }
+      case "Routing": {
+        return this.RoutingURLs.indexOf(this.router.url) > -1;
       }
       default: {
         return link == this.router.url;
