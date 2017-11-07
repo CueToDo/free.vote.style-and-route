@@ -12,8 +12,10 @@ import { SelectedComponent } from './quick-posts/selected/selected.component';
 import { MyPostsComponent } from './quick-posts/my-posts/my-posts.component';
 import { FavouritePostsComponent } from './quick-posts/favourite-posts/favourite-posts.component';
 import { SignInComponent } from './authentication/sign-in/sign-in.component';
-import { MenuTextComponent } from './menu/menu-text/menu-text.component';
+import { MenuTextComponent } from './menu-text/menu-text.component';
+import { MenuNgxBsComponent } from './menu-ngx-bs/menu-ngx-bs.component';
 import { RoutingComponent } from './routing/routing.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -37,13 +39,15 @@ const appRoutes: Routes = [
     FavouritePostsComponent,
     SignInComponent,
     MenuTextComponent,
-    RoutingComponent
+    RoutingComponent,
+    MenuNgxBsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,11 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
+        "app/styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -55,7 +54,7 @@
   },
   "defaults": {
     "serve": {
-      "port": 4201
+      "port": 4203
     },
     "styleExt": "css",
     "component": {}

@@ -1,0 +1,91 @@
+<div>
+  <a class="btn btn-primary">Home</a>
+  
+  <div class="btn-group" dropdown>
+
+    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+      Button dropdown
+    </button>
+    
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Action</a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Something else here</a>
+      </li>
+      <li class="divider dropdown-divider"></li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Separated link</a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div>
+  <div class="btn-group" dropdown>
+    <button dropdownToggle type="button" class="btn btn-outline-success dropdown-toggle">Menu</button>
+
+    <ul class="dropdown-menu" ngbDropdownMenu>
+      <li>
+        <a class="dropdown-item" routerLink="/menu-component">Menu</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <button class="btn btn-outline-primary" ngbDropdownToggle>Routing</button>
+  <div class="dropdown-menu" ngbDropdownMenu>
+    <a class="dropdown-item">routing</a>
+  </div>
+
+  <div class="dropdown menu">
+
+    <ul class="nav nav-pills">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/menu-component">Menu</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Routing</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/routing">routing</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Quick Posts</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/trending">trending</a>
+          </li>
+          <li>
+            <a routerLink="/selected">selected</a>
+          </li>
+          <li>
+            <a routerLink="/my-posts">my posts</a>
+          </li>
+          <li>
+            <a routerLink="/favourite-posts">favourite posts</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/sign-in">Sign In</a>
+      </li>
+    </ul>
+
+  </div>
+</div>

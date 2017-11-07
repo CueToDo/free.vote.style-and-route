@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Free.Vote';
+  title = 'Free.Vote Style and Route';
   strapline = 'express yourself honestly, disagree without fear, agree without favour';
 }
