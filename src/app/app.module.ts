@@ -23,7 +23,7 @@ const appRoutes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'trending', component: TrendingComponent },
   { path: 'selected', component: SelectedComponent },
-  { path: 'my-posts', component: MyPostsComponent },
+  { path: 'my-posts/:select', component: MyPostsComponent },
   { path: 'favourite-posts', component: FavouritePostsComponent },
   { path: 'routing', component: RoutingComponent }
 ];

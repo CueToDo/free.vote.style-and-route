@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Free.Vote Style and Route';
   strapline = 'express yourself honestly, disagree without fear, agree without favour';
+  
 }
